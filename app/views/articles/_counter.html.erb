@@ -1,0 +1,7 @@
+<% if Article.public_count == 0 %>
+  <p>This blog has no public articles</p>
+<% elsif Article.public_count == 1 %>
+  <p>This blog has <%= Article.public_count %> article</p> 
+<% else %>
+  <p>This blog has <%= Article.public_count %> articles</p>
+<% end%>
